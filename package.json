@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-svg-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple module to implement your own svg icons in nuxt3.",
   "author": "the-missing-pink (https://github.com/the-missing-pink)",
   "repository": {
