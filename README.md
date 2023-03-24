@@ -43,7 +43,7 @@ export default defineNuxtConfig({
 ```
 Be aware that you start the path with ```./```
 
-That's it! You can now use Nuxt3 SVG Icons in your Nuxt app ✨
+That's it! You can now use Nuxt3 SVG Icons in your Nuxt app, have fun! ✨
 
 ## Usage
 1. Create either a folder 'icons' in the 'assets' folder, or any different structure in the 'assets' folder. If you create a different structure see the info above about how to change the settings for this.
