@@ -1,9 +1,6 @@
 # Nuxt3 SVG Icons
 A simple module to implement SVG icons in your nuxt3 package with quite some configuration options.
 
-<!-- - [✨ &nbsp;Release Notes](/CHANGELOG.md) -->
-- [🏀 Online playground](https://stackblitz.com/github/the-missing-pink/nuxt3-svg-icons?file=playground%2Fapp.vue)
-
 ## Features
 - Configurable with several options: size, fill, stroke.
 - Possible to use a different directory for your icons.

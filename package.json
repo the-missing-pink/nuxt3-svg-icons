@@ -2,6 +2,10 @@
   "name": "nuxt3-svg-icons",
   "version": "1.0.0",
   "description": "A simple module to implement your own svg icons in nuxt3.",
+  "author": {
+    "name": "the-missing-pink",
+    "url": "https://github.com/the-missing-pink"
+  },
   "repository": "the-missing-pink/nuxt3-svg-icons",
   "license": "MIT",
   "type": "module",
@@ -35,7 +39,9 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.3.1"
+    "@nuxt/kit": "^3.3.1",
+    "defu": "^6.1.2",
+    "vite-svg-loader": "^4.0.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
@@ -45,7 +51,6 @@
     "changelogen": "^0.5.1",
     "eslint": "^8.36.0",
     "nuxt": "^3.3.1",
-    "vite-svg-loader": "^4.0.0",
     "vitest": "^0.29.3"
   }
 }
