@@ -6,7 +6,7 @@
     "name": "the-missing-pink",
     "url": "https://github.com/the-missing-pink"
   },
-  "repository": "the-missing-pink/nuxt3-svg-icons",
+  "repository": "github:the-missing-pink/nuxt3-svg-icons",
   "license": "MIT",
   "type": "module",
   "keywords": [
