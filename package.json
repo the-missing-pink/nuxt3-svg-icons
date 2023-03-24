@@ -1,6 +1,6 @@
 {
-  "name": "@the-missing-pink/nuxt3-svg-icons",
-  "version": "1.0.0",
+  "name": "nuxt3-svg-icons",
+  "version": "1.0.1",
   "description": "A simple module to implement your own svg icons in nuxt3.",
   "author": "the-missing-pink (https://github.com/the-missing-pink)",
   "repository": {
@@ -33,7 +33,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish --access=public && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
