@@ -15,14 +15,13 @@ const config = useRuntimeConfig()
 const svgIconsConfig = config.nuxt3SvgIcons
 const svgIconsDir = svgIconsConfig.dir
 
-
 const props = withDefaults(defineProps<{
   name: string
-  fill: string
-  stroke: string
-  strokeWidth: string
+  fill?: string
+  stroke?: string
+  strokeWidth?: string
   size?: string | { width: string, height: string }
-  useTextColor: boolean
+  useTextColor?: boolean
 }>(), {
   size: '1em',
   useTextColor: false
@@ -48,13 +47,15 @@ const icon = defineAsyncComponent(() => {
   try {
     return import(/* @vite-ignore */ `${svgIconsDir}/${props.name}.svg?component`)
   } catch (error) {
-    return null
+    console.log(`The icon ${props.name} could not be found.`)
+    return
   }
 })
 </script>
 
 <style>
 .svg-icon-el {
+  display: inline-block;
   vertical-align: middle;
 }
 </style>

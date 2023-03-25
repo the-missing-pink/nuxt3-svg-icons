@@ -10,8 +10,14 @@
       </li>
       <li style="color: teal;">
         Use the text color:
-        <svg-icon name="fire" />
-        <svg-icon name="path-in-g-fill-monochrome" />
+        <svg-icon
+          name="fire"
+          :use-text-color="useTextColor"
+        />
+        <svg-icon
+          name="path-in-g-fill-monochrome"
+          :use-text-color="useTextColor"
+        />
       </li>
       <li>
         Use defined svg with colors:
@@ -59,6 +65,7 @@
 </template>
 
 <script setup>
+const useTextColor = true;
 </script>
 
 <style>
