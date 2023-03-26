@@ -15,20 +15,22 @@ const config = useRuntimeConfig()
 const svgIconsConfig = config.nuxt3SvgIcons
 const svgIconsDir = svgIconsConfig.dir
 
-const props = withDefaults(defineProps<{
+interface Props {
   name: string
-  fill?: string
-  stroke?: string
-  strokeWidth?: string
+  fill: string | undefined
+  stroke: string | undefined
+  strokeWidth: string | undefined
   size?: string | { width: string, height: string }
   useTextColor?: boolean
-}>(), {
+}
+
+const props = withDefaults(defineProps<Props>(), {
   size: '1em',
   useTextColor: false
 })
 
 const styles = computed(() => {
-  const styles = []
+  const styles: Array<any> = []
   props.useTextColor && styles.push(["fill", "currentColor !important"])
   props.fill && !props.useTextColor && styles.push(["fill", props.fill])
   props.stroke && styles.push(["stroke", props.stroke])
@@ -43,13 +45,13 @@ const styles = computed(() => {
   return Object.fromEntries(mappedStyles)
 })
 
-const icon = defineAsyncComponent(() => {
-  try {
-    return import(/* @vite-ignore */ `${svgIconsDir}/${props.name}.svg?component`)
-  } catch (error) {
-    console.log(`The icon ${props.name} could not be found.`)
-    return
-  }
+const icon = defineAsyncComponent((): any => {
+try {
+return import(/* @vite-ignore */ `${svgIconsDir}/${props.name}.svg?component`);
+} catch (error) {
+console.log(`The icon ${props.name} could not be found.`);
+return;
+}
 })
 </script>
 
